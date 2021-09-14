@@ -10,7 +10,7 @@
 <div class="body" ng-app="myApp">
     <div class="wrapper" ng-controller="MyCtrl">
 	<h1 style="color:white;">Text Summarizer</h1>
-<form name="form" action="http://127.0.0.1:5000/output"  method="POST">
+<form name="form" action="{{ url_for('output') }}"  method="POST">
   <textarea cols="100" rows="25" name="textarea" id="textarea"></textarea>   
 <br>
 <br>
